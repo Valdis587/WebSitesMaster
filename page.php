@@ -16,7 +16,7 @@ get_header();
 get_template_part( 'template-parts/content', 'head');
 ?>
 
-    <div class="site-body" >
+
 
         <?php
         while ( have_posts() ) :
@@ -29,7 +29,7 @@ get_template_part( 'template-parts/content', 'head');
         endwhile; // End of the loop.
         ?>
 
-    </div>
+
 
 <?php
 get_footer();

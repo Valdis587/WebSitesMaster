@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0">
     <link rel="alternate" href="<?php echo home_url(); ?>" hreflang="ru-ru" />
     <meta name="keywords" content="Заказать сайт, заказать сайт недорого, заказать сайт под ключ" />
-    <link rel="shortcut icon" href="<?php echo home_url(); ?>/favicon.svg" type="image/svg+xml" />
+    <link rel="shortcut icon" sizes="120x120" href="<?php echo home_url(); ?>/favicon.svg" type="image/svg+xml" />
     <link rel="shortcut icon" href="<?php echo home_url(); ?>/favicon.ico" type="image/x-icon" />
 	<?php wp_head(); ?>
 </head>
@@ -49,3 +49,7 @@
             </div>
         </div>
     </header>
+    <!--wrapper-->
+    <div class="site-animation-wrapper">
+        <canvas class="back-anim" data-src="<?php echo get_template_directory_uri() ?>/images/111.glb" data-font="<?php echo get_template_directory_uri() ?>/images/TimesNewRoman.json" id="back-anim"></canvas>
+        <div class="site-content-wrapper">

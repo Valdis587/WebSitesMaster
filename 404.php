@@ -11,7 +11,7 @@ get_header();
 get_template_part( 'template-parts/content', 'head');
 ?>
 
-    <div class="site-body" >
+
         <div class="pages container">
             <div class="pages__404-content">
                 <h3 class="pages__404-title">404</h3>
@@ -21,7 +21,7 @@ get_template_part( 'template-parts/content', 'head');
                 </div>
             </div>
         </div>
-    </div>
+    
 
 <?php
 get_footer();

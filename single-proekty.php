@@ -11,7 +11,7 @@ get_header();
 get_template_part( 'template-parts/content', 'head');
 global $webmaster;
 ?>
-    <div class="site-body" >
+
         <div class="archive container">
             <div class="archive__content">
                 <div class="archive__left">
@@ -45,7 +45,7 @@ global $webmaster;
             get_template_part( 'template-home/content', 'job' );
             ?>
         </div>
-    </div><!-- #main -->
+
 
 <?php
 get_footer();

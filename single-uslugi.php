@@ -10,13 +10,13 @@
 get_header();
 get_template_part( 'template-parts/content', 'head');
 ?>
-    <div class="site-body" >
+
         <div class="servicePage container">
             <div class="servicePage__content">
                 <div id="servicePage__conten-left" class="servicePage__conten-left">
-                    <canvas data-src="<?php echo get_template_directory_uri() ?>/images/777.glb" id="zakSite__animate"  class="zakSite__animate"></canvas>
+                    <canvas  data-src="<?php echo get_template_directory_uri() ?>/images/444.glb" id="servicePage__animate"  class="servicePage__animate"></canvas>
                 </div>
-                <div class="servicePage__conten-right">
+                <div id="servicePage__conten-left" class="servicePage__conten-right">
                     <h3 class="servicePage__conten-right-title"><?php echo carbon_get_the_post_meta('crb_serv_title'); ?></h3>
                     <?php
                     global $post;
@@ -44,6 +44,6 @@ get_template_part( 'template-parts/content', 'head');
             get_template_part( 'template-home/content', 'job' );
             ?>
         </div>
-    </div>
+
 <?php
 get_footer();

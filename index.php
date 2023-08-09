@@ -16,7 +16,7 @@ get_header();
 
 get_template_part( 'template-parts/content', 'head');
 ?>
-    <div class="site-body" >
+
        <div class="archive blog container">
              <div class="archive__content">
                  <div class="archive__left">
@@ -57,6 +57,6 @@ get_template_part( 'template-parts/content', 'head');
            get_template_part( 'template-home/content', 'job' );
            ?>
        </div>
-    </div>
+
 <?php
 get_footer();

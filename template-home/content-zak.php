@@ -12,7 +12,7 @@
     <h4 class="site-head-title">Заказать сайт под ключ</h4>
     <p class="site-head-decription">В период разработки сaйта пoд ключ, мы нaxoдимся с вaми нa связи нa всex этaпax paбoты. От сбopa пepвичнoй инфopмaции, peaлизaции пpoeктa, дo oбслуживaния ужe гoтoвoгo сaйтa.</p>
     <div class="zakSite__content container">
-        <div class="zakSite__left">
+        <div id="zakSite__left" class="zakSite__left">
             <p>Вы можете заказать сайт и предоставить все материалы (тексты, картинки, фото и видео материалы, логотипы и т.п.) для его наполнения. Но зачастую заниматься подбором материалов нет времени и вы можете заказать сайт под ключ. Мы самостоятельно найдём всё необходимое для наполнения вашего сайта, напишем тексты, подберём необходимые картинки и прочие материалы.</p>
             <p>У нас можно заказать сайт-визитку, landing page (лендинг, одностраничник), сайт каталог для частных лиц и самозанятых граждан, заказать сайт для индивидуальных предпринимателей.</p>
             <p class="main-title1">Способы связи для заказа сайта и консультаций:</p>
@@ -25,8 +25,7 @@
             </ul>
         </div>
         <div id="zakSite__right" class="zakSite__right">
-            <h2 class="web-title">WebSites Master</h2>
-            <canvas data-src="<?php echo get_template_directory_uri() ?>/images/444.glb" id="zakSite__animate-home"  class="zakSite__animate-home"></canvas>
+            <canvas  data-src="<?php echo get_template_directory_uri() ?>/images/ggggg.glb"  id="zakSite__animate-home"  class="zakSite__animate-home"></canvas>
         </div>
     </div>
 </section>

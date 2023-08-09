@@ -66,6 +66,8 @@
         </div>
     </div>
 </div><!--popup-->
+</div>
+</div>
 <?php
 if(carbon_get_theme_option('crb_yandex')) {
     echo carbon_get_theme_option('crb_yandex');

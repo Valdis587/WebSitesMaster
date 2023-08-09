@@ -32,7 +32,7 @@
                 </div>
                 <div class="service__item-right">
                     <div class="service__item-link">
-                        <a href="<?php the_permalink(); ?>">Подробнее <i class="icon-long-arrow-alt-right"></i></a>
+                        <a class="header__but but-animete site-button" href="<?php the_permalink(); ?>">Подробнее</a>
                     </div>
                     <div class="service__item-img rot-item">
                         <?php $thumbnail_url = carbon_get_theme_option('crb_logo'); ?>

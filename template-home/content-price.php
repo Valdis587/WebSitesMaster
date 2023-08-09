@@ -40,7 +40,7 @@ $thumbnail_url = carbon_get_theme_option('crb_logo');
                                 $item=carbon_get_post_meta( $post->ID, 'crb_slides_price' );
                                 foreach ($item as $mains) {
                                 ?>
-                                <li><i class="icon-check"></i><a href=""><?php echo $mains['price_serv']; ?></a></li>
+                                <li><i class="icon-check"></i><?php echo $mains['price_serv']; ?></li>
                                 <?php } ?>
                             </ul>
                             <div class="homePrice__item-button">

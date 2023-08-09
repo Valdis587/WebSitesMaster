@@ -6,7 +6,7 @@ get_header();
 get_template_part( 'template-parts/content', 'head');
 ?>
 
-<div class="site-body" >
+
     <div class="pages container">
         <div class="pages__content">
             <div class="pages__item">
@@ -28,6 +28,6 @@ get_template_part( 'template-parts/content', 'head');
         get_template_part( 'template-home/content', 'job' );
         ?>
     </div>
-</div>
+
 <?php
 get_footer();
