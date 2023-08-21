@@ -51,5 +51,5 @@
     </header>
     <!--wrapper-->
     <div class="site-animation-wrapper">
-        <canvas class="back-anim" data-src="<?php echo get_template_directory_uri() ?>/images/111.glb" data-font="<?php echo get_template_directory_uri() ?>/images/TimesNewRoman.json" id="back-anim"></canvas>
+        <canvas class="back-anim" data-src="<?php echo get_template_directory_uri() ?>/images/111.glb" id="back-anim"></canvas>
         <div class="site-content-wrapper">

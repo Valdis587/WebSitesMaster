@@ -19,7 +19,7 @@
                 if ($main) {?>
                     <img src="<?php echo $main[0]; ?>" alt="<?php bloginfo('name'); ?>">
                 <?php } else { ?>
-                    <img class="bg-bl" width="70px" height="70px" src="<?php echo get_template_directory_uri() . '/images/logo.png'; ?>" alt="<?php bloginfo('name'); ?>">
+                    <img class="bg-bl" width="70px" height="70px" src="<?php echo get_template_directory_uri() . '/images/rewievs.jpg'; ?>" alt="<?php bloginfo('name'); ?>">
                 <?php } ?>
             </div>
         </div>

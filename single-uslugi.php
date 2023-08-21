@@ -14,7 +14,7 @@ get_template_part( 'template-parts/content', 'head');
         <div class="servicePage container">
             <div class="servicePage__content">
                 <div id="servicePage__conten-left" class="servicePage__conten-left">
-                    <canvas  data-src="<?php echo get_template_directory_uri() ?>/images/444.glb" id="servicePage__animate"  class="servicePage__animate"></canvas>
+                    <canvas  data-src="<?php echo get_template_directory_uri() ?>/images/setpage.glb" id="servicePage__animate"  class="servicePage__animate"></canvas>
                 </div>
                 <div id="servicePage__conten-left" class="servicePage__conten-right">
                     <h3 class="servicePage__conten-right-title"><?php echo carbon_get_the_post_meta('crb_serv_title'); ?></h3>

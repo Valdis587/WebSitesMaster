@@ -14,10 +14,9 @@ get_template_part( 'template-parts/content', 'head');
                     </div>
                 </div>
                 <div id="ONas__page" class="pages__item">
-                    <canvas  data-src="<?php echo get_template_directory_uri() ?>/images/333.glb" id="ONas__animate"  class="ONas__animate"></canvas>
+                    <canvas  data-src="<?php echo get_template_directory_uri() ?>/images/onas.glb" id="ONas__animate"  class="ONas__animate"></canvas>
                 </div>
             </div>
-        </div>
         <?php
         get_template_part( 'template-home/content', 'price' );
         get_template_part( 'template-home/content', 'job' );
