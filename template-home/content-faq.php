@@ -11,7 +11,7 @@
 
 <section class="faq">
     <h4 class="site-head-title">Часто задаваемые вопросы</h4>
-    <p class="site-head-decription">Здесь вы найдете ответы на некоторые из наиболее распространенных вопросов о разработке сайтов под ключ. Если у вас остались другие вопросы, не стесняйтесь обратиться к нам через мессенджеры</p>
+    <p class="site-head-decription">Здесь вы найдете ответы на некоторые из наиболее распространенных вопросов о разработке под ключ. Если у вас остались другие вопросы, не стесняйтесь обратиться к нам через мессенджеры</p>
     <div class="faq__content">
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -28,7 +28,7 @@
             <button class="faq__vopros"><?php the_title(''); ?></button><i class="icon-plus"></i>
         </div>
         <div class="faq__otvet">
-            <p><?php echo carbon_get_the_post_meta('crb_faq_otvet'); ?></p>
+            <p class="back-job"><?php echo carbon_get_the_post_meta('crb_faq_otvet'); ?></p>
         </div>
         <?php endwhile;
         endif; ?>

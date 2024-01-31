@@ -20,6 +20,7 @@ function webmaster_scripts() {
 
     wp_enqueue_style( 'webmaster-style', get_stylesheet_uri(), array(), _S_VERSION );
 
+    wp_enqueue_script( 'webmaster-swiper', get_template_directory_uri() . '/js/swiper.min.js', array(), _S_VERSION, true );
 
     wp_enqueue_script( 'webmaster-webscripts', get_template_directory_uri() . '/js/scripts.min.js', array(), _S_VERSION, true );
 
@@ -31,11 +32,3 @@ add_action( 'wp_enqueue_scripts', 'webmaster_scripts' );
 
 
 
-function mihdan_add_async_attribute( $tag, $handle ) {
-    if ( 'webmaster-webscripts' !== $handle ) {
-        return $tag;
-    }
-
-    return str_replace( ' src', ' async="async" src', $tag );
-}
-add_filter( 'script_loader_tag', 'mihdan_add_async_attribute', 10, 2 );

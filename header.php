@@ -22,7 +22,7 @@
 	<?php wp_head(); ?>
 </head>
 <body>
-<div class="site-wrapper" >
+<div class="main-wrap">
     <header class="header">
         <div class="header__content container">
             <div class="header__logo">
@@ -44,12 +44,16 @@
                     </div>
                 </nav>
             </div>
+            <div class="header__phone">
+                <a href="https://viber.click/<?php echo carbon_get_theme_option('crb_viber_link'); ?>"><i class="icon-viber"></i>Viber</a>
+                <a href="https://wa.clck.bar/<?php echo carbon_get_theme_option('crb_whatsapp_link'); ?>"><i class="icon-whatsapp"></i>WhatsApp</a>
+            </div>
             <div class="header__button">
-                <a aria-label="telegram" href="https://t.me/<?php echo carbon_get_theme_option('crb_telegram_link'); ?>" class="header__but but-animete site-button"><i class="icon-telegram-plane"></i> Задать вопрос</a>
+                <a  href="https://t.me/<?php echo carbon_get_theme_option('crb_telegram_link'); ?>" class="header__but but-animete site-button"><i class="icon-telegram-plane"></i> Задать вопрос</a>
             </div>
         </div>
     </header>
     <!--wrapper-->
     <div class="site-animation-wrapper">
-        <canvas class="back-anim" data-src="<?php echo get_template_directory_uri() ?>/images/111.glb" id="back-anim"></canvas>
+        <canvas class="back-anim" data-src="<?php echo get_template_directory_uri() ?>/images/moneta/mon.gltf" id="back-anim"></canvas>
         <div class="site-content-wrapper">

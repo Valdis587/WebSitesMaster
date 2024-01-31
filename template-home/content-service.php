@@ -10,8 +10,8 @@
 ?>
 
 <section class="service">
-    <h4 class="site-head-title">Заказать сайт недорого</h4>
-    <p class="site-head-decription">Цена на разработку сайта напрямую зависит от количества часов, которые IT-специалист затрачивает на работу. Заказав сайт у нас клиенты получают надежного партнера, который дает гарантии бесперебойной, оперативной и корректной работы сайта вне зависимости от таких параметров как размеры, загрузка и др.</p>
+    <h4 class="site-head-title">Наши услуги</h4>
+    <p class="site-head-decription">Цена на разработку напрямую зависит от количества часов, которые IT-специалист затрачивает на работу. Сделав заказ у нас клиенты получают надежного партнера, который дает гарантии бесперебойной, оперативной и корректной работы ресурса вне зависимости от таких параметров как размеры, загрузка и др.</p>
     <div class="service__content container">
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -32,11 +32,11 @@
                 </div>
                 <div class="service__item-right">
                     <div class="service__item-link">
-                        <a class="header__but but-animete site-button" href="<?php the_permalink(); ?>">Подробнее</a>
+                        <a class="service__but but-animete site-button" href="<?php the_permalink(); ?>">Подробнее</a>
                     </div>
                     <div class="service__item-img rot-item">
                         <?php $thumbnail_url = carbon_get_theme_option('crb_logo'); ?>
-                        <img src="<?php echo $thumbnail_url; ?>" alt="<?php bloginfo('name'); ?>">
+                        <img src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(''); ?>">
                     </div>
                 </div>
             </div>

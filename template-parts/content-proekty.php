@@ -18,8 +18,7 @@
                     $id = get_post_thumbnail_id();
                     $main=wp_get_attachment_image_src( $id, 'job' );
                     ?>
-                    <img src="<?php echo $main[0]; ?>" alt="<?php bloginfo('name'); ?>">
-                </a>
+                    <img src="<?php echo $main[0]; ?>" alt="<?php the_title(''); ?>"></a>
             </div>
         </div>
         <div class="job__right">

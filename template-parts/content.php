@@ -18,16 +18,14 @@
                     $id = get_post_thumbnail_id();
                     $main=wp_get_attachment_image_src( $id, 'blog' );
                     ?>
-                <img src="<?php echo $main[0]; ?>" alt="<?php bloginfo('name'); ?>">
+                <img src="<?php echo $main[0]; ?>" alt="<?php the_title(''); ?>">
                 </a>
             </div>
             <span class="blog__date"><?php the_date( 'Y-m-d'); ?></span>
             <span class="blog__autor"><?php the_author(); ?></span>
         </div>
         <div class="blog__right">
-            <a href="<?php the_permalink(); ?>">
-                <h4 class="blog__title"><?php the_title(''); ?></h4>
-            </a>
+            <a href="<?php the_permalink(); ?>"><h4 class="blog__title"><?php the_title(''); ?></h4></a>
             <p class="blog__desc"><?php do_excerpt(get_the_excerpt(), 8); ?></p>
             <div class="blog__button">
                 <a href="<?php the_permalink(); ?>" class="blog__but but-animete site-button">Читать далее</a>

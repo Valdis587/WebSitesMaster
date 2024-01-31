@@ -8,13 +8,13 @@ get_template_part( 'template-parts/content', 'head');
 
         <div class="pages container">
             <div class="pages__content">
-                <div class="pages__item">
+                <div id="ONas__page" class="pages__item">
                     <div class="pages__text">
                         <p><?php echo carbon_get_theme_option('crb_onas'); ?></p>
                     </div>
                 </div>
                 <div id="ONas__page" class="pages__item">
-                    <canvas  data-src="<?php echo get_template_directory_uri() ?>/images/onas.glb" id="ONas__animate"  class="ONas__animate"></canvas>
+                    <canvas  data-src="<?php echo get_template_directory_uri() ?>/images/moneta/mon.gltf" id="ONas__animate"  class="ONas__animate"></canvas>
                 </div>
             </div>
         <?php

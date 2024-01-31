@@ -27,6 +27,12 @@ function crb_attach_theme_options()
         ->add_fields(array(
             Field::make( 'image', 'crb_logo', 'Логотип' )
                 ->set_value_type( 'url'),
+            Field::make( 'complex', 'crb_slides_home22', 'Слайдер' )
+                ->add_fields( array(
+                    Field::make( 'text', 'homeflide_title32', 'Заголовок 1' ),
+                    Field::make( 'text', 'homeflide_title42', 'Заголовок 2' ),
+                    Field::make( 'text', 'homeflide_title52', 'Заголовок 3' )
+                )),
             Field::make( 'image', 'crb_top_panel', 'Фон загаловка страниц' )
                 ->set_value_type( 'url' ),
             Field::make('text', 'crb_title_popup','Заголовок popup' ),

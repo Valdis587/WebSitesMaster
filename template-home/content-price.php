@@ -9,8 +9,8 @@
 $thumbnail_url = carbon_get_theme_option('crb_logo');
 ?>
 <section class="homePrice">
-    <h3 class="site-head-title">Цены на разработку сайтов</h3>
-    <p class="site-head-decription">Предлагаем заказать сайт для различных отраслей бизнеса, с разным бюджетом и с разными бизнес-задачами.</p>
+    <h3 class="site-head-title">Стоимость разработки</h3>
+    <p class="site-head-decription">Предлагаем Вам заказать сайт для различных отраслей бизнеса, с разным бюджетом и с разными бизнес-задачами.</p>
     <div class="homePrice__content container">
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -32,7 +32,7 @@ $thumbnail_url = carbon_get_theme_option('crb_logo');
                         </div>
                         <div class="homePrice__item-right">
                             <div class="homePrice__item-logo">
-                                <img src="<?php echo $thumbnail_url; ?>" alt="<?php bloginfo('name'); ?>">
+                                <img src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(''); ?>">
                             </div>
                             <ul class="homePrice__item-list">
                                 <?php
@@ -44,7 +44,7 @@ $thumbnail_url = carbon_get_theme_option('crb_logo');
                                 <?php } ?>
                             </ul>
                             <div class="homePrice__item-button">
-                                <a aria-label="telegram" href="https://t.me/<?php echo carbon_get_theme_option('crb_telegram_link'); ?>" class="homePrice__item-but but-animete site-button"><i class="icon-telegram-plane"></i> Задать вопрос</a>
+                                <a  href="https://t.me/<?php echo carbon_get_theme_option('crb_telegram_link'); ?>" class="homePrice__item-but but-animete site-button"><i class="icon-telegram-plane"></i> Задать вопрос</a>
                             </div>
                         </div>
                     </div>

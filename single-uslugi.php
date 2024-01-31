@@ -14,9 +14,10 @@ get_template_part( 'template-parts/content', 'head');
         <div class="servicePage container">
             <div class="servicePage__content">
                 <div id="servicePage__conten-left" class="servicePage__conten-left">
-                    <canvas  data-src="<?php echo get_template_directory_uri() ?>/images/setpage.glb" id="servicePage__animate"  class="servicePage__animate"></canvas>
+                    <canvas  data-src="<?php echo get_template_directory_uri() ?>/images/serv/serv.gltf" id="servicePage__animate"  class="servicePage__animate"></canvas>
                 </div>
-                <div id="servicePage__conten-left" class="servicePage__conten-right">
+                <div id="servicePage__conten-right" class="servicePage__conten-right back-gr-v">
+                    <div class="bg-bl">
                     <h3 class="servicePage__conten-right-title"><?php echo carbon_get_the_post_meta('crb_serv_title'); ?></h3>
                     <?php
                     global $post;
@@ -29,16 +30,22 @@ get_template_part( 'template-parts/content', 'head');
                     </div>
                     <?php } ?>
                 </div>
+                </div>
             </div>
+            <div class="back-gr servicePage__content-text-wrapper">
+                <div class="bg-bl servicePage__conten-bottom-list">
             <h4 class="site-head-title"><?php the_title(); ?></h4>
             <div class="servicePage__content-text">
                 <?php the_content(); ?>
             </div>
+
             <div class="single__button">
                 <?php if(carbon_get_theme_option('crb_telegram_link')) { ?>
                     <a href="https://t.me/<?php echo carbon_get_theme_option('crb_telegram_link'); ?>" class="single__but but-animete site-button"><i class="icon-telegram-plane"></i> Заказать сайт</a>
                 <?php } ?>
             </div>
+                </div>
+    </div>
             <?php
             get_template_part( 'template-home/content', 'price' );
             get_template_part( 'template-home/content', 'job' );

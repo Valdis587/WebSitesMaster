@@ -20,8 +20,6 @@ require get_template_directory() . '/includes/admin/fildes/job.php';
 
 require get_template_directory() . '/includes/admin/fildes/service.php';
 
-require get_template_directory() . '/includes/admin/fildes/home.php';
-
 require get_template_directory() . '/includes/admin/fildes/price.php';
 
 require get_template_directory() . '/includes/admin/fildes/faq.php';

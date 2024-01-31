@@ -16,19 +16,24 @@ global $webmaster;
             <div class="archive__content">
                 <div class="archive__left">
                     <div class="archive__row single">
-                        <div class="single__img">
+                        <div class="single__img back-gr">
                             <?php
                             $id = get_post_thumbnail_id();
                             $main=wp_get_attachment_image_src( $id, 'job' );
                             ?>
+                            <div class="bg-bl single__img-wrap">
                             <img src="<?php echo $main[0]; ?>" width="<?php echo $main[1]; ?>" height="<?php echo $main[2]; ?>" alt="<?php bloginfo('name'); ?>">
-                        </div>
-                        <p class="single__name"><?php echo carbon_get_the_post_meta('crb_name_job'); ?></p>
+                            </div>
+                            </div>
+                        <div class="single__wrapper back-gr">
+                            <div class="bg-bl single__wrapper-bg">
+                            <p class="single__name"><?php echo carbon_get_the_post_meta('crb_name_job'); ?></p>
                         <p class="single__price"><?php echo carbon_get_the_post_meta('crb_job_price'); ?></p>
                         <h4 class="site-head-title"><?php the_title(''); ?></h4>
                         <div class="single__desc">
                             <?php the_content(); ?>
                         </div>
+
                         <?php if(carbon_get_the_post_meta('crb_job_link')) {?>
                         <div class="single__button">
                             <noindex>
@@ -36,6 +41,8 @@ global $webmaster;
                             </noindex>
                         </div>
                         <?php } ?>
+                        </div>
+                    </div>
                     </div>
                 </div>
                 <?php get_sidebar(); ?>
