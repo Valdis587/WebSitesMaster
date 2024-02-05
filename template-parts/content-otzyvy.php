@@ -6,9 +6,9 @@
  *
  * @package WebSitesMaster
  */
-
+global $websitesmaster;
+$value = redux_post_meta( 'websitesmaster', 'reviews-dop' );
 ?>
-
 <div class="swiper-slide reviews__item back-gr">
     <div class="bg-bl">
         <div class="reviews__left">
@@ -25,9 +25,9 @@
         </div>
         <div class="reviews__right">
             <span class="reviews__name"><?php the_title(''); ?></span>
-            <span class="reviews__job"><?php echo carbon_get_the_post_meta('crb_name'); ?></span>
-            <span class="reviews__date"><?php echo carbon_get_the_post_meta('crb_date'); ?></span>
-            <p class="reviews__title"><?php echo carbon_get_the_post_meta('crb_reviews'); ?></p>
+            <span class="reviews__job"><?php echo $value['title-reviews']; ?></span>
+            <span class="reviews__date"><?php echo $value['reviews-date']; ?></span>
+            <p class="reviews__title"><?php echo $value['reviews-desc']; ?></p>
         </div>
     </div>
 </div>

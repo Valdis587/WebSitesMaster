@@ -43,6 +43,5 @@ get_template_part( 'template-parts/content', 'head');
             get_template_part( 'template-home/content', 'job' );
             ?>
         </div>
-
 <?php
 get_footer();

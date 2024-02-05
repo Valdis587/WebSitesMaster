@@ -6,9 +6,9 @@
  *
  * @package WebSitesMaster
  */
-
+global $websitesmaster;
+$value = redux_post_meta( 'websitesmaster', 'proekty-dop' );
 ?>
-
 <div class="swiper-slide job__item cart-item back-gr-v">
     <div class="bg-bl">
         <div class="job__left">
@@ -23,8 +23,8 @@
         </div>
         <div class="job__right">
             <a href="<?php the_permalink(); ?>"><h3 class="job__title"><?php the_title(''); ?></h3></a>
-            <p class="job__name"><?php echo carbon_get_the_post_meta('crb_name_job'); ?></p>
-            <p class="job__price"><?php echo carbon_get_the_post_meta('crb_job_price'); ?></p>
+            <p class="job__name"><?php echo $value['title-proekty']; ?></p>
+            <p class="job__price"><?php echo $value['proekty-price']; ?></p>
             <div class="job__button">
                 <a href="<?php the_permalink(); ?>" class="job__but but-animete site-button">Подробнее</a>
             </div>

@@ -6,12 +6,11 @@
  *
  * @package WebSitesMaster
  */
-global $post;
+global $websitesmaster; 
 ?>
-
 <section class="job">
-    <h3 class="site-head-title">Выполненные работы</h3>
-    <p class="site-head-decription">Разработка сайта — это возможность создать уникальное пространство, где ваша компания сможет представить свои продукты и услуги всему миру. Предлагаем вам заказать продукт, который будет отражать все преимущества вашего бизнеса.</p>
+    <h3 class="site-head-title"><?php echo $websitesmaster['job-home-title']; ?></h3>
+    <p class="site-head-decription"><?php echo $websitesmaster['job-home-desc']; ?></p>
     <div class="swiper job__carusel container">
         <div class="swiper-wrapper job__wrapper ">
             <?php

@@ -19,14 +19,14 @@ if ( ! defined( '_S_VERSION' ) ) {
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function webmaster_setup() {
+function websitesmaster_setup() {
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
 		* If you're building a theme based on WebSitesMaster, use a find and replace
-		* to change 'webmaster' to the name of your theme in all the template files.
+		* to change 'websitesmaster' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'webmaster', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'websitesmaster', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -45,7 +45,6 @@ function webmaster_setup() {
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
 	add_theme_support( 'post-thumbnails' );
-
 
 
 	/*
@@ -69,7 +68,7 @@ function webmaster_setup() {
 	add_theme_support(
 		'custom-background',
 		apply_filters(
-			'webmaster_custom_background_args',
+			'websitesmaster_custom_background_args',
 			array(
 				'default-color' => 'ffffff',
 				'default-image' => '',
@@ -95,7 +94,7 @@ function webmaster_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'webmaster_setup' );
+add_action( 'after_setup_theme', 'websitesmaster_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -104,14 +103,12 @@ add_action( 'after_setup_theme', 'webmaster_setup' );
  *
  * @global int $content_width
  */
-function webmaster_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'webmaster_content_width', 640 );
+function websitesmaster_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'websitesmaster_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'webmaster_content_width', 0 );
+add_action( 'after_setup_theme', 'websitesmaster_content_width', 0 );
 
 
 
-
-
-require get_template_directory() . '/includes/functions/config.php';
+require get_template_directory() . '/include/functions/config.php';
 

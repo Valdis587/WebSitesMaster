@@ -13,7 +13,7 @@ get_template_part( 'template-parts/content', 'head');
     <div class="archive container">
         <div class="archive__service">
             <?php
-            get_template_part( 'template-home/content', 'service' );
+            get_template_part( 'template-home/content', 'serv' );
             get_template_part( 'template-home/content', 'price' );
             get_template_part( 'template-home/content', 'job' );
             ?>

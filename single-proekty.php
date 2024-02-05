@@ -9,7 +9,8 @@
 
 get_header();
 get_template_part( 'template-parts/content', 'head');
-global $webmaster;
+global $websitesmaster;
+$value = redux_post_meta( 'websitesmaster', 'proekty-dop' );
 ?>
 
         <div class="archive container">
@@ -27,17 +28,17 @@ global $webmaster;
                             </div>
                         <div class="single__wrapper back-gr">
                             <div class="bg-bl single__wrapper-bg">
-                            <p class="single__name"><?php echo carbon_get_the_post_meta('crb_name_job'); ?></p>
-                        <p class="single__price"><?php echo carbon_get_the_post_meta('crb_job_price'); ?></p>
+                            <p class="single__name"><?php echo $value['title-proekty']; ?></p>
+                        <p class="single__price"><?php echo $value['proekty-price']; ?></p>
                         <h4 class="site-head-title"><?php the_title(''); ?></h4>
                         <div class="single__desc">
                             <?php the_content(); ?>
                         </div>
 
-                        <?php if(carbon_get_the_post_meta('crb_job_link')) {?>
+                        <?php if($value['proekty-link']) {?>
                         <div class="single__button">
                             <noindex>
-                                <a href="<?php echo carbon_get_the_post_meta('crb_job_link'); ?>" class="single__but but-animete site-button">Перейти на сайт</a>
+                                <a href="<?php echo $value['proekty-link']; ?>" class="single__but but-animete site-button">Перейти на сайт</a>
                             </noindex>
                         </div>
                         <?php } ?>
@@ -49,7 +50,7 @@ global $webmaster;
             </div>
             <?php
             get_template_part( 'template-home/content', 'price' );
-            get_template_part( 'template-home/content', 'job' );
+            get_template_part( 'template-home/content', 'serv' );
             ?>
         </div>
 

@@ -7,11 +7,11 @@
  * @package WebSitesMaster
  */
 
-if ( ! is_active_sidebar( 'sidebar-news' ) ) {
+if ( ! is_active_sidebar( 'sidebar-blog' ) ) {
 	return;
 }
 ?>
 
 <div class="archive__right sidebar">
-	<?php dynamic_sidebar( 'sidebar-news' ); ?>
+	<?php dynamic_sidebar( 'sidebar-blog' ); ?>
 </div><!-- #secondary -->

@@ -39,10 +39,9 @@ get_template_part( 'template-parts/content', 'head');
             <?php get_sidebar(); ?>
         </div>
         <?php
-        get_template_part( 'template-home/content', 'price' );
-        get_template_part( 'template-home/content', 'job' );
-        ?>
-    </div>
-
+            get_template_part( 'template-home/content', 'price' );
+            get_template_part( 'template-home/content', 'serv' );
+            ?>
+        </div>
 <?php
 get_footer();

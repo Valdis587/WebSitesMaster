@@ -6,12 +6,11 @@
  *
  * @package WebSitesMaster
  */
-
+global $websitesmaster; 
 ?>
-
 <section class="faq">
-    <h4 class="site-head-title">Часто задаваемые вопросы</h4>
-    <p class="site-head-decription">Здесь вы найдете ответы на некоторые из наиболее распространенных вопросов о разработке под ключ. Если у вас остались другие вопросы, не стесняйтесь обратиться к нам через мессенджеры</p>
+    <h4 class="site-head-title"><?php echo $websitesmaster['faq-home-title']; ?></h4>
+    <p class="site-head-decription"><?php echo $websitesmaster['faq-home-desc']; ?></p>
     <div class="faq__content">
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -24,12 +23,7 @@
         $MY_QUERY = new WP_Query( $args );
         if ( $MY_QUERY->have_posts() ) :
         while ( $MY_QUERY->have_posts() ) : $MY_QUERY->the_post(); ?>
-        <div class="faq__vop-wrap">
-            <button class="faq__vopros"><?php the_title(''); ?></button><i class="icon-plus"></i>
-        </div>
-        <div class="faq__otvet">
-            <p class="back-job"><?php echo carbon_get_the_post_meta('crb_faq_otvet'); ?></p>
-        </div>
+        <?php get_template_part( 'template-parts/content', 'faq' ); ?>
         <?php endwhile;
         endif; ?>
     </div>

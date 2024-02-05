@@ -6,12 +6,12 @@
  *
  * @package WebSitesMaster
  */
-global $post;
+global $websitesmaster;
 ?>
 
 <section class="blog">
-    <h4 class="site-head-title">Новости</h4>
-    <p class="site-head-decription">Рекламировать себя в интернет – наиболее рациональное решение в ситуации, когда речь идёт о решении конкретных задач (увеличение рыночной доли, рост продаж, повышение личной репутации либо узнаваемости бренда).</p>
+    <h4 class="site-head-title"><?php echo $websitesmaster['news-home-title']; ?></h4>
+    <p class="site-head-decription"><?php echo $websitesmaster['news-home-desc']; ?></p>
     <div class="swiper blog__slider container">
         <div class="swiper-wrapper blog__wrapper ">
             <?php

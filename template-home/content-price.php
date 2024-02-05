@@ -6,11 +6,11 @@
  *
  * @package WebSitesMaster
  */
-$thumbnail_url = carbon_get_theme_option('crb_logo');
+global $websitesmaster; 
 ?>
 <section class="homePrice">
-    <h3 class="site-head-title">Стоимость разработки</h3>
-    <p class="site-head-decription">Предлагаем Вам заказать сайт для различных отраслей бизнеса, с разным бюджетом и с разными бизнес-задачами.</p>
+    <h3 class="site-head-title"><?php echo $websitesmaster['price-home-title']; ?></h3>
+    <p class="site-head-decription"><?php echo $websitesmaster['price-home-desc']; ?></p>
     <div class="homePrice__content container">
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -23,33 +23,7 @@ $thumbnail_url = carbon_get_theme_option('crb_logo');
         $MY_QUERY = new WP_Query( $args );
         if ( $MY_QUERY->have_posts() ) :
             while ( $MY_QUERY->have_posts() ) : $MY_QUERY->the_post(); ?>
-
-                <div class="homePrice__item cart-item back-gr-v">
-                    <div class="bg-bl">
-                        <div class="homePrice__item-left">
-                            <h3 class="homePrice__item-title"><?php the_title(''); ?></h3>
-                            <p class="homePrice__item-price"><?php echo carbon_get_the_post_meta('crb_price_price'); ?></p>
-                        </div>
-                        <div class="homePrice__item-right">
-                            <div class="homePrice__item-logo">
-                                <img src="<?php echo $thumbnail_url; ?>" alt="<?php the_title(''); ?>">
-                            </div>
-                            <ul class="homePrice__item-list">
-                                <?php
-                                global $post;
-                                $item=carbon_get_post_meta( $post->ID, 'crb_slides_price' );
-                                foreach ($item as $mains) {
-                                ?>
-                                <li><i class="icon-check"></i><?php echo $mains['price_serv']; ?></li>
-                                <?php } ?>
-                            </ul>
-                            <div class="homePrice__item-button">
-                                <a  href="https://t.me/<?php echo carbon_get_theme_option('crb_telegram_link'); ?>" class="homePrice__item-but but-animete site-button"><i class="icon-telegram-plane"></i> Задать вопрос</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+             <?php get_template_part( 'template-parts/content', 'price' ); ?>
             <?php endwhile;
         endif; ?>
     </div>

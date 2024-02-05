@@ -13,19 +13,16 @@
  */
 
 get_header();
-
-get_template_part( 'template-parts/content', 'head');
+get_template_part( 'template-parts/content', 'head' );
 ?>
 
-       <div class="archive blog container">
-             <div class="archive__content">
-                 <div class="archive__left">
-                      <div class="archive__row">
-                          <div class="archive__col">
+<div class="archive blog container">
+        <div class="archive__content">
+		<div class="archive__left">
+            <div class="archive__row">
+				<div class="archive__col">
 		<?php
 		if ( have_posts() ) :
-            
-
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -39,24 +36,18 @@ get_template_part( 'template-parts/content', 'head');
 
 			endwhile;
 
-
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif;
 		?>
-                          </div>
-                          <?php wp_main_pagination(); ?>
-                    </div>
-                 </div>
-        <?php get_sidebar(); ?>
-             </div>
-           <?php
-           get_template_part( 'template-home/content', 'price' );
-           get_template_part( 'template-home/content', 'job' );
-           ?>
-       </div>
-
+		</div>
+		 <?php wp_main_pagination(); ?>
+			</div>
+	</div>
+		<?php get_sidebar(); ?>
+		</div>
+	</div>
 <?php
 get_footer();

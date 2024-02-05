@@ -33,4 +33,3 @@ get_template_part( 'template-parts/content', 'head');
 
 <?php
 get_footer();
-
